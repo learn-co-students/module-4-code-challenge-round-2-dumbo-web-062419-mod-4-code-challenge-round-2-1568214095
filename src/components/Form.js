@@ -17,11 +17,15 @@ class Form extends React.Component {
   handleSubmit = (event) => {
      event.preventDefault()
     this.props.addNewBook(this.state)
+    this.setState({
+      title: '',
+      img: '',
+      author: ''
+    })
   }
 
 
   render() {
-    console.log(this.state)
     return (
         <div>
           <h1>Add Book</h1>
