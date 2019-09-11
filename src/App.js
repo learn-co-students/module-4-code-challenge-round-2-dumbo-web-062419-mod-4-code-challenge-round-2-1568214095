@@ -29,7 +29,22 @@ class App extends Component {
 
   handleNewBookSubmit = (bookObj) => {
     // console.log(bookObj)
-    this.setState({books: [...this.state.books, bookObj]})
+    const newBook = {
+      title: bookObj.title,
+      author: bookObj.author,
+      img: bookObj.img
+    }
+
+    fetch('http://localhost:3005/books', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(newBook)
+    })
+    .then(res => res.json)
+    .then(newBookFromServer => this.setState({books: [...this.state.books, newBookFromServer]}))
   }
 
   render() {
