@@ -30,7 +30,7 @@ class App extends Component {
   }
 
   newBook = (book) => {
-    this.setState({books: [...this.state.books, book]})
+    this.setState({ books: [...this.state.books, book] })
   }
 
   render() {
