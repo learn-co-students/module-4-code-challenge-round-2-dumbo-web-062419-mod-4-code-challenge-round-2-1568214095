@@ -47,6 +47,30 @@
       "title": "We Should All Be Feminists",
       "author": "Chimamanda Ngozi Adichie",
       "img": "https://images-na.ssl-images-amazon.com/images/I/51L9u20bC7L._SX348_BO1,204,203,200_.jpg"
+    },
+    {
+      "title": "How to Win Friends and Influence People",
+      "author": "Dale Carnegie",
+      "img": "https://images.gr-assets.com/books/1442726934l/4865.jpg",
+      "id": 9
+    },
+    {
+      "title": "The Obstacle is the Way",
+      "author": "Ryan Holiday",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41d%2Baa6UYCL._SX352_BO1,204,203,200_.jpg",
+      "id": 10
+    },
+    {
+      "title": "Harry Potter and the Half Blood Prince",
+      "author": "jk rowling ",
+      "img": "https://i5.walmartimages.com/asr/8f059ace-f001-42b5-a6fa-23793d50e1af_1.c0161e289939f60a399c695f45db4710.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF",
+      "id": 11
+    },
+    {
+      "title": "harry potter and the chamber of secrets",
+      "author": "jk rowling ",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51jNORv6nQL._SX340_BO1,204,203,200_.jpg",
+      "id": 12
     }
   ]
 }
