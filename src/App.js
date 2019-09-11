@@ -24,7 +24,6 @@ class App extends Component {
     this.setState({
       bookShelf: [...this.state.bookShelf, book]
     })
-    
   }
 
   removeBookFromShelf = (bookOnShelf) => {
@@ -37,15 +36,26 @@ class App extends Component {
   }
 
   handleSubmitForm = (newBook) => {
+    console.log(newBook);
+    
+    fetch("http://localhost:3005/books", {
+      method: "POST",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        title: newBook.title,
+        author: newBook.author,
+        img: newBook.img
+      })
+    })
     this.setState({
       books: [...this.state.books, newBook]
     })
-    
   }
   
   render() {
-    console.log(this.state.bookShelf);
-    
     return (
       <div className="book-container">
         <BookList

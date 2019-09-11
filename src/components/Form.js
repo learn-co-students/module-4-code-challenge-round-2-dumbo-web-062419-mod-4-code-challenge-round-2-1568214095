@@ -16,8 +16,6 @@ class Form extends React.Component {
   handleFormSubmission = (e) => {
     e.preventDefault()
     this.props.handleSubmitForm(this.state)
-    
-    
   }
   render() {
     
@@ -29,8 +27,6 @@ class Form extends React.Component {
         <input type="submit" />
       </form>
     )
-
-
   }
 }
 
